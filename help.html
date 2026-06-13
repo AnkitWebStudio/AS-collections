@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nike Help Center</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            color: #111;
+        }
+
+        /* HEADER */
+
+        .header {
+            height: 60px;
+            background: #fff;
+            border-bottom: 1px solid #d9d9d9;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 40px;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+span{
+font-size: 10px;
+
+}
+
+
+
+
+
+        .logo {
+            width: 50px;
+        }
+
+        .help-title {
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        .user i {
+            font-size: 15px;
+        }
+
+        /* MAIN */
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* SIGN IN CARD */
+
+        .signin-card {
+            background: #fff;
+            border: 1px solid #d8d8d8;
+            border-radius: 14px;
+
+            padding: 15px 22px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .signin-left {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .signin-left i {
+            font-size: 40px;
+        }
+
+        .signin-text h3 {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .signin-text p {
+            color: #666;
+            font-size: 10px;
+        }
+
+        .sign-btn {
+            border: none;
+            background: #000;
+            color: #fff;
+            padding: 12px 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        /* SECTION TITLE */
+
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 18px;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        /* GRID */
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        /* CARD */
+
+        .topic-card {
+            height: 120px;
+            background: #fff;
+            border: 1px solid #d8d8d8;
+            border-radius: 14px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 14px;
+
+            cursor: pointer;
+            transition: .25s;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .topic-card i {
+            font-size: 46px;
+            font-weight: 300;
+        }
+
+        .topic-card p {
+            text-align: center;
+            font-size: 10px;
+            font-weight: 500;
+            padding: 0 10px;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px) {
+
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .signin-card {
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+            }
+
+            .signin-text h3 {
+                font-size: 22px;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .header {
+                padding: 0 20px;
+            }
+
+            .help-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <header class="header">
+
+        <div class="logo-section">
+
+            <!-- Nike SVG -->
+            <div class="logo">
+       <img src="asset/img/logo.svg" alt="logo" id="logo">
+
+            </div>
+
+            <h1 class="help-title">Help Center</h1>
+             
+
+        </div>
+
+        <div class="user">
+            <i class="ri-user-line"></i>
+            <span>User</span>
+           
+        </div>
+
+         
+    </header>
+
+    <main class="container">
+
+        <div class="signin-card">
+
+            <div class="signin-left">
+
+                <i class="ri-user-follow-line"></i>
+
+                <div class="signin-text">
+                    <h3>Getting help is easy</h3>
+                    <p>Sign in to get help with recent orders</p>
+                </div>
+
+            </div>
+
+            <button class="sign-btn">Sign in</button>
+
+        </div>
+
+        <h2 class="section-title">Browse Topics</h2>
+
+        <div class="topics-grid">
+
+            <div class="topic-card">
+                <i class="ri-user-line"></i>
+                <p>Account Settings and Shopping</p>
+            </div>
+
+            <div class="topic-card">
+                <i class="ri-wallet-3-line"></i>
+                <p>Checkout and Payment</p>
+            </div>
+
+            <div class="topic-card">
+                <i class="ri-truck-line"></i>
+                <p>Shipping and Dispatch</p>
+            </div>
+
+            <div class="topic-card">
+                <i class="ri-arrow-go-back-line"></i>
+                <p>Refunds</p>
+            </div>
+
+            <div class="topic-card">
+                <i class="ri-archive-line"></i>
+                <p>Order Status and Issues</p>
+            </div>
+
+            <div class="topic-card">
+                <i class="ri-inbox-unarchive-line"></i>
+                <p>Returns and Replacement</p>
+            </div>
+
+            <div class="topic-card">
+                <i class="ri-information-line"></i>
+                <p>Others</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+
+        document.querySelectorAll(".topic-card").forEach(card => {
+            card.addEventListener("click", () => {
+                console.log(card.innerText);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
